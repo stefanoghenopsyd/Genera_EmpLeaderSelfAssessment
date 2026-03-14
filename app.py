@@ -125,7 +125,7 @@ def main():
     st.header("Introduzione")
     st.markdown("""
     Il modello di **Empowering Leadership** sviluppato da Arnold et al. (2000) è uno dei pilastri della moderna psicologia del lavoro e delle organizzazioni. Sposta il focus dall’esercizio della leadership dal "capo che decide" al "coach che abilita".
-    La leadership quindi non riguarda tanto il controllo, quanto il trasferimento di potere e autonomia ai collaboratori per migliorare la loro autoefficacia e performance. Arnold e i suoi colleghi hanno identificato cinque categorie specifiche:
+    La leadership quindi non riguarda tanto il controllo, quanto il trasferimento di potere e autonomia ai collaboratori per migliorare la loro autoefficacia e performance. Arnold e i suoi colleghi hanno identificato cinque categorie specifiche per ottenere ciò:
     
     1. **Leading by Example (Dare l'esempio):** Il leader mostra coerenza tra parole e azioni. Lavora duramente e dimostra impegno.
     2. **Participative Decision Making (Processo decisionale partecipativo):** Il leader incoraggia i collaboratori a esprimere idee e suggerimenti.
@@ -133,7 +133,7 @@ def main():
     4. **Informing (Informare):** La trasparenza è fondamentale. Il leader condivide informazioni rilevanti.
     5. **Showing Concern (Mostrare interesse):** La dimensione umana. Il leader si prende cura del benessere dei collaboratori.
     
-    L'obiettivo finale è generare **empowerment psicologico**: Significato, Competenza, Autodeterminazione, Impatto.
+    L'obiettivo finale di una leadership empowering è generare **empowerment psicologico**: Significato, Competenza, Autodeterminazione, Impatto. Migliorando così la prestazione del team e potenziandone i membri.
     
     **Obiettivo del test:** valutare la propria propensione verso uno stile di leadership empowering.
     """)
