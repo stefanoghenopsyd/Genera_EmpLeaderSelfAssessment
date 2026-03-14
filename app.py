@@ -31,8 +31,8 @@ DOMANDE = [
     "9. Il leader deve ascoltare le idee e i suggerimenti provenienti dai membri del gruppo.",
     "10. Il leader deve prendere in considerazione le idee del gruppo anche quando non è d’accordo con esse.",
     "11. Il leader deve prende decisioni che si basano unicamente sulle sue idee (R).",
-    "12. Il leader incoraggia i membri del gruppo a condividere le informazioni.",
-    "13. Il leader propone suggerimenti per migliorare i risultati del gruppo.",
+    "12. Il leader deve incoraggiare i membri del gruppo a condividere le informazioni.",
+    "13. Il leader deve proporre suggerimenti per migliorare i risultati del gruppo.",
     "14. Il leader deve incoraggiare i membri del gruppo a risolvere insieme i problemi.",
     "15. Il leader deve aiutare il gruppo a prendere consapevolezza delle aree in cui ci sarebbe bisogno di maggiore formazione.",
     "16. Il leader deve aiutare tutti i membri del gruppo.",
@@ -66,9 +66,10 @@ OPZIONI = {"Per niente d'accordo": 1, "Poco d'accordo": 2, "Abbastanza d'accordo
 
 # --- FUNZIONI ---
 def interpreta_punteggio(punteggio):
-    if punteggio < 2: return "Basso"
-    elif punteggio <= 4: return "Medio"
-    else: return "Alto"
+    if punteggio < 2: return "basso"
+    elif punteggio => 2 <= 3: return "medio-basso"
+    elif punteggio => 3 <= 4: return "medio-alto"
+    else: return "alto"
 
 def crea_radar_chart(dati, labels):
     # Chiude il cerchio del radar
@@ -127,7 +128,7 @@ def main():
     4. **Informing (Informare):** La trasparenza è fondamentale. Il leader condivide informazioni rilevanti.
     5. **Showing Concern (Mostrare interesse):** La dimensione umana. Il leader si prende cura del benessere dei collaboratori.
     
-    L'obiettivo finale è generare **empowerment psicologico**: Significato, Competenza, Autodeterminazione, Impatto.
+    L'obiettivo finale dell'esercizio della leadership è generare nel team **empowerment psicologico**: Significato, Competenza, Autodeterminazione, Impatto. Sviluppando così un team capace di lavorare in autonomia, di assumersi responsabilità e migliorare allo stesso tempo la propria prestazione.
     
     **Obiettivo del test:** valutare la propria propensione verso uno stile di leadership empowering.
     """)
@@ -231,7 +232,7 @@ def main():
         for dim, score in punteggi_dim.items():
             st.write(f"- **{dim}:** {score:.2f} (Livello: {interpreta_punteggio(score)})")
             
-        st.markdown("### Percezione della Leadership")
+        st.markdown("### Valutazione della Leadership")
         st.write(f"- **Leadership subita (superiore diretto):** {punteggio_39} (Livello: {interpreta_punteggio(punteggio_39)})")
         st.write(f"- **Leadership agita (autopercezione):** {punteggio_40} (Livello: {interpreta_punteggio(punteggio_40)})")
         
